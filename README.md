@@ -1,2 +1,2 @@
 # OST-Assignment
-Hello Everyone I am Nitesh Pawar this is a simple home page(frontEnd) made by using Bootstrape in VS code.
+This repository cantain html and css code for creating a simple home page( frontend). Also there is short video of homepage that demonstrate how it looks.
