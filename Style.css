@@ -1,0 +1,113 @@
+.navbar {
+    background-color: rgba(218, 0, 0, 0.046);
+    height: auto;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    box-shadow: 0 6px 8px #1900ff;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #f0ff1c;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.navbar-text 
+{
+    font-style:calc();
+    font-size: 16px;
+    color: #20ffb5;
+}
+
+.login-button {
+    background-color: #ff00ee;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color, 0.3s box-shadow;
+}
+
+.login-button:hover {
+    background-color: #00b383;
+    box-shadow: 0 4px 8px rgba(0, 153, 112, 0.3);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-line {
+    color: #27edff;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s color;
+}
+
+.nav-line:hover, .nav-link.active {
+    color: #000;
+}
+
+.nav-line::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-line:hover::before, .nav-link.active::before {
+    width: 100px;
+    visibility: visible;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    background: url(https://images.pexels.com/photos/2478248/pexels-photo-2478248.jpeg?auto=compress&cs=tinysrgb&w=600.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.454);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 1.5em;
+    position: left;
+}
+
+.hero-section h2 {
+    font-size: 1.2em;
+}
